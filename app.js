@@ -18,7 +18,7 @@ function encriptar() {
             let codigo = texto.charCodeAt(i);
             resultado += String.fromCharCode(codigo + 1);
         }
-        document.getElementById("desencriptado").innerHTML = resultado;
+        document.getElementById("desencriptado").innerHTML = resultado.toLowerCase();
         document.getElementById("texto").value = ""
     }
 
@@ -46,7 +46,7 @@ function desencriptar() {
             let codigo = textoEncriptado.charCodeAt(i);
             resultado += String.fromCharCode(codigo - 1);
         }
-        document.getElementById("desencriptado").innerHTML = resultado;
+        document.getElementById("desencriptado").innerHTML = resultado.toLowerCase();
     }
 }
 
